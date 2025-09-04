@@ -9,8 +9,8 @@ La API elegida fue la de **Elden Ring**: [https://docs.eldenring.fanapis.com/doc
 - Se implementó un componente en React que usa **2 hooks**:
   - `useState` → controla la paginación.  
   - `useFetch` → realiza las peticiones a la API.  
-- El componente muestra información de los **bosses de Elden Ring** con diseño responsivo.  
-- Se incluye un sistema de paginación para navegar entre resultados.
+- El componente muestra información de los **bosses de Elden Ring** con diseño simple.  
+
 
 ## Dependencias principales
 - React (con Vite).  
