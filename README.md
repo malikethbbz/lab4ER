@@ -1,7 +1,7 @@
 # Lab 4 – Consumo de API REST con React
 
 ## Descripción
-Este proyecto consiste en consumir un **API REST pública** desde un componente de React, utilizando al menos dos hooks (`useState` y un hook personalizado `useFetch`).  
+Esta entrega consiste en consumir un **API REST pública** desde un componente de React, utilizando al menos dos hooks (`useState` y `useFetch`).  
 La API elegida fue la de **Elden Ring**: [https://docs.eldenring.fanapis.com/docs/bosses](https://docs.eldenring.fanapis.com/docs/bosses).
 
 ## Requisitos cumplidos
