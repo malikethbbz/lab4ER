@@ -1,12 +1,21 @@
-# React + Vite
+# Lab 4 – Consumo de API REST con React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
+Este proyecto consiste en consumir un **API REST pública** desde un componente de React, utilizando al menos dos hooks (`useState` y un hook personalizado `useFetch`).  
+La API elegida fue la de **Elden Ring**: [https://docs.eldenring.fanapis.com/docs/bosses](https://docs.eldenring.fanapis.com/docs/bosses).
 
-Currently, two official plugins are available:
+## Requisitos cumplidos
+- Se investigó y utilizó un sitio que expone un API REST.  
+- Se implementó un componente en React que usa **2 hooks**:
+  - `useState` → controla la paginación.  
+  - `useFetch` → realiza las peticiones a la API.  
+- El componente muestra información de los **bosses de Elden Ring** con diseño responsivo.  
+- Se incluye un sistema de paginación para navegar entre resultados.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Dependencias principales
+- React (con Vite).  
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Ejecución
+```bash
+npm install
+npm run dev
