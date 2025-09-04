@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #0a0a0f, #050507 80%);
+  color: #ddd;
+  font-family: "Agmena Paneuropean Book", "Uncial Antiqua", serif;
+}
+
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;          /* se queda detrás de la app */
+  pointer-events: none; /* no bloquea clicks */
+}
+
+.app {
+  width: 100%;
+  max-width: 1400px;
+  padding: 2rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #c4a747; 
+  margin-bottom: 2rem;
+  text-shadow: 0 0 8px rgba(196, 167, 71, 0.5);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: linear-gradient(145deg, #111, #1a1a24);
+  border: 1px solid #2c2c38;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #7a4bcc; 
+}
+
+.img-container {
+  width: 100%;
+  height: 180px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.no-img {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.card h3 {
+  margin: 0.5rem 0 0;
+  color: #e0d8ff;
+  font-size: 1.1rem;
+}
+.card p {
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+  color: #aaa;
+}
+
+.pagination {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.pagination button {
+  padding: 0.5rem 1rem;
+  background: #222;
+  color: #ddd;
+  border: 1px solid #444;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.pagination button:hover:not(:disabled) {
+  background: #7a4bcc;
+  color: #fff;
+}
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
